@@ -1,0 +1,10 @@
+      volumes:
+      - name: varlog
+        hostPath:
+          path: /var/log
+      - name: varlibdockercontainers
+        hostPath:
+          path: /data/docker/containers ### 注意docker的目录
+      - name: config-volume
+        configMap:
+          name: fluentd-es-config-v0.2.0
