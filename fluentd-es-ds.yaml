@@ -1,3 +1,4 @@
+注意docker的目录：
       volumes:
       - name: varlog
         hostPath:
